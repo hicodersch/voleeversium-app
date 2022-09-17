@@ -3,73 +3,40 @@ import NavbarComponent from "../components/NavbarNpoComponent";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Badge from "react-bootstrap/Badge";
-import Form from "react-bootstrap/Form";
-
+import ListGroup from "react-bootstrap/ListGroup";
 function NonproHome() {
   const isLoggedIn = true;
   if (isLoggedIn) {
     return (
       <div>
         <NavbarComponent></NavbarComponent>
-        <Container fluid className="mt-5 flex-column d-flex ">
+        <Container fluid className="mt-5 flex-column d-flex">
           <Row className="justify-content-center">
-            <Col lg="4">
-              <img
-                alt=""
-                src="/assets/profile-avatar.png"
-                width="300"
-                height="300"
-              />
+            <Col className="col-3 m-2 d-flex flex-column align-items-center justify-content-center">
+              <Row>
+                <img
+                  style={{ borderRadius: "50%" }}
+                  alt=""
+                  src="/assets/wlw.png"
+                  width="300"
+                  height="300"
+                />
+              </Row>
             </Col>
             <Col className="lg=6">
-              <Row >
+              <Row>
                 <h1>Details</h1>
                 <hr></hr>
-              </Row> 
+              </Row>
               <Row className="bg-light m-3">
                 <Col>
-                  <Form d-flex>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Label>From</Form.Label>
-                      <Form.Control type="date" placeholder="Enter email" />
-                    </Form.Group>
-                  </Form>
-                </Col>
-                <Col>
-                  <Form d-flex>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                      <Form.Label>To</Form.Label>
-                      <Form.Control type="date" placeholder="Password" />
-                    </Form.Group>
-                  </Form>
-                </Col>
-              </Row>
-              <Row className="bg-light m-3">
-                <h5 className="ml-2">Status</h5>
-                <p> In Progress</p>
-              </Row>
-              <Row className="bg-light m-3">
-                <h1>Requirement</h1>
-                <hr></hr>
-              </Row>
-              <Row className="bg-light m-3">
-                <Col lg="2">
-                  <Badge bg="primary">JavaScript</Badge>{" "}
-                </Col>
-                <Col lg="2">
-                  <Badge bg="secondary">HTML</Badge>{" "}
-                </Col>
-                <Col lg="2">
-                  <Badge bg="danger">React</Badge>{" "}
-                </Col>
-                <Col lg="2">
-                  <Badge bg="warning" text="dark">
-                    Node.js
-                  </Badge>{" "}
-                </Col>
-                <Col lg="2">
-                  <Badge bg="info">Java</Badge>{" "}
+                  <ListGroup variant="flush">
+                    <ListGroup.Item>
+                      Schaffhauserstrasse 470, 8052 Zürich
+                    </ListGroup.Item>
+                    <ListGroup.Item>+41 44 000 1519</ListGroup.Item>
+                    <ListGroup.Item>info@wlw.ch</ListGroup.Item>
+                  </ListGroup>
                 </Col>
               </Row>
             </Col>
@@ -79,6 +46,4 @@ function NonproHome() {
     );
   }
 }
-
-
-export default NonproHome
+export default NonproHome;
