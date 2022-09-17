@@ -4,9 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ProvoleeComponent from "../components/ProvoleeComponent";
 import Form from "react-bootstrap/Form";
+import NavbarComponent from "../components/NavbarNpoComponent";
 
 function MatchProVolee() {
   return (
+    <>
+    <NavbarComponent></NavbarComponent>
     <Container className="mt-5 flex-column d-flex align-items-center justify-content-center">
       <Row className="justify-content-center">
         <Col>
@@ -55,6 +58,7 @@ function MatchProVolee() {
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 

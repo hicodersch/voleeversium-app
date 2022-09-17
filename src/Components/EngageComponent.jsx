@@ -15,19 +15,19 @@ function EngageComponent() {
           className="rounded-circle"
           style={{ width: "10rem", height: "10rem" }}
           variant="top"
-          src="https://i.pinimg.com/originals/44/9e/5e/449e5e93c14f34fb7b90559e4f9908ab.jpg"
+          src="https://forum-ids.org/wp-content/uploads/2019/05/vga-logo.jpg"
         />
-        <Card.Title>User Name</Card.Title>
-        <Card.Text>Senior Developer</Card.Text>
+        <Card.Title>ProVolee Name</Card.Title>
+        <Card.Text>ProVolee Title</Card.Text>
         <Card.Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
           mollitia, molestiae quas vel s
         </Card.Text>
-        <Card.Img
+       {/*  <Card.Img
           style={{ width: "8rem", height: "5rem" }}
           variant="top"
           src="/assets/star.png"
-        />
+        /> */}
         <Form>
           <Container
             fluid
