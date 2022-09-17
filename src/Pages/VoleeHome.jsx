@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarComponent from "../components/NavbarComponent";
+import NavbarComponent from "../components/NavbarVoleeComponent";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
