@@ -13,7 +13,7 @@ function VoleeHome() {
     return (
       <div>
         <NavbarComponent navbarItem={navbarVoleeItem}></NavbarComponent>
-        <Container fluid className="mt-5 flex-column d-flex ">
+        <Container  className="mt-5 flex-column d-flex ">
           <Row className="justify-content-center">
             <Col
               lg="2"
