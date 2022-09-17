@@ -5,9 +5,16 @@ import NavbarComponent from "../components/NavbarNpoComponent";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Badge from "react-bootstrap/Badge";
+import Button from 'react-bootstrap/Button';
+import { useNavigate } from "react-router-dom";
+
 
 
 function ProvoleeList() {
+
+  const navigate = useNavigate();
+
+    const navigateProjectDetails = ()=> navigate("/project-details");
   const provoleeList = [
     {
       projectName: "FullStack Web Development Course",
@@ -94,6 +101,12 @@ function ProvoleeList() {
                     </Card.Text>
                     <Card.Text>{pro.schedule}</Card.Text>
                   </Card.Body>
+                  <div className="m-2 d-grid gap-2">
+      <Button variant="warning" size="lg" onClick={navigateProjectDetails}>
+        Details
+      </Button>
+      
+    </div>
                 </Card>
               </Col>
             );

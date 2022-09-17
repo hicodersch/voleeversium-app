@@ -12,6 +12,8 @@ import MatchProVolee from './pages/MatchProVolee';
 import Engage from './pages/Engage';
 import VoleeBazar from './pages/VoleeBazar';
 import ProvoleeList from './pages/ProvoleeList';
+import ProjectDetails from './pages/ProjectDetails';
+
 
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
         <Route path="/volee-login" element={<Login />} />
         <Route path="/nonpro-login" element={<Login />} />
         <Route path="/engage" element={<Engage />} />
+        <Route path="/project-details" element={<ProjectDetails />} />
         <Route path="/volee-bazar" element={<VoleeBazar />} />
       </Routes>
     </div>
