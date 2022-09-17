@@ -18,8 +18,6 @@ const handleOnChange = (e)=>{
 const handleSubmit = (e)=>{
   e.preventDefault()
  addUser()
- console.log(user)
-
 }
 
 const addUser = ()=>{
