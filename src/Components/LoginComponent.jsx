@@ -10,19 +10,23 @@ import { useNavigate } from "react-router-dom";
 function LoginComponent(props) {
 
   const [user, setUser]=useState({})
+  const [userType, setUserType]=useState("")
 
   const [allowLogin, setAllowLogin]=useState(false);
 
   useEffect(() => {
-   if(allowLogin)
-   navigateToHome()
-    
+    if(props.location==="/volee-login"){
+      setUserType("Volee");
+    }else{
+      setUserType("Non-Profit");
+    }
+    if(allowLogin){
+     navigateToHome();
+    }   
   }, [allowLogin])
-  
   
 const handleOnChange = (e)=>{
   setUser({...user, [e.target.name]:e.target.value})
-
 }
 
 const handleSubmit = async (e)=>{
@@ -53,7 +57,7 @@ const navigateToHome = ()=> {props.location==="/volee-login" ? navigate("/volee-
           variant="top"
           src="/assets/login-logo.png"
         />
-        <Card.Title>Login</Card.Title>
+        <Card.Title>{userType}</Card.Title>
         <Form onSubmit={handleSubmit}>
           <Form.Group
             className="d-felx flex-column justify-content-center mb-3"
