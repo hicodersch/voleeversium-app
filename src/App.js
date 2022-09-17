@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Role from './pages/Role';
+import MatchProVolee from './pages/MatchProVolee';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/role" element={<Role />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/volee-home/match" element={<MatchProVolee />} />
       </Routes>
     </div>
   );
