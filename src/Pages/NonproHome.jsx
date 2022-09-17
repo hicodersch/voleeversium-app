@@ -7,7 +7,7 @@ import Badge from "react-bootstrap/Badge";
 import Form from "react-bootstrap/Form";
 
 function NonproHome() {
-  const navbarNonproItem = ["Profil", "ProVolee"];
+  const navbarNonproItem = ["Profil", "ProVolees"];
   const isLoggedIn = true;
   if (isLoggedIn) {
     return (
