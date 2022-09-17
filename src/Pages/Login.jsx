@@ -15,7 +15,8 @@ const location = useLocation()
 
   return (
 
-    <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center">
+    <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center"
+    style={{backgroundImage:"linear-gradient(to right, #ccd3db, #fce7e8)"}}>
       <Row className="justify-content-center">
         <Col  lg="8">
         <img
@@ -30,7 +31,7 @@ const location = useLocation()
         <Col  lg="6">
         <LoginComponent location={location.pathname}/>
         </Col>
-        <Col  lg="6">
+        <Col lg="6">
         <RegisterComponent location={location.pathname}/>
         </Col>
       </Row>

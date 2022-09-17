@@ -1,8 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
+import './Role.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 function TypesExample() {
     const navigate = useNavigate();
@@ -12,7 +14,9 @@ function TypesExample() {
 
 
   return (
-    <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center">
+    <Container fluid  className="flex-column d-flex align-items-center justify-content-center role-container"
+    style={{backgroundImage:"linear-gradient(to right, #ccd3db, #fce7e8)"}}>
+        
         <Row className="justify-content-center">
         <Col  lg="8">
         <img
@@ -23,12 +27,22 @@ function TypesExample() {
           className="align-top"/>
         </Col>
       </Row>
-      <Row className="justify-content-md-center">
-        <Col  lg="6">
-        <Button  style={{ width: "25rem", height: "35rem" }} variant="success" onClick={navigateToVoleeLogin}>Volee</Button>{' '}
+      <Row className="mb-5 justify-content-md-center">
+        <Col  lg="6"  style={{ width: "20rem", height: "30rem"}} onClick={navigateToVoleeLogin}> <img style={{borderRadius:"10px"}}
+          alt=""
+          width="300"
+          height="400"
+          src="/assets/voolunteer.jpg"
+/> 
+       
         </Col>
-        <Col  lg="6">
-        <Button style={{ width: "25rem", height: "35rem" }}  variant="warning" onClick={navigateToNonproLogin}>NonPro</Button>{' '}
+        <Col  lg="6"  style={{ width: "20rem", height: "30rem"}} onClick={navigateToNonproLogin}> <img style={{borderRadius:"10px"}}
+          alt=""
+          width="300"
+          height="400"
+          src="/assets/voolunteer.jpg"
+/> 
+       
         </Col>
       </Row>
       
@@ -38,3 +52,4 @@ function TypesExample() {
 }
 
 export default TypesExample;
+

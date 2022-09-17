@@ -8,6 +8,4 @@ function VoleeHome() {
       return <NavbarComponent navbarItem={navbarVoleeItem}></NavbarComponent>;
     }
   }
-
-
 export default VoleeHome

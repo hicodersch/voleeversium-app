@@ -46,7 +46,8 @@ const navigateToLogin = ()=> {location.pathname==="/volee-signup" ? navigate("/v
 
 
   return (
-    <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center">
+    <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center"
+    style={{backgroundImage:"linear-gradient(to right, #ccd3db, #fce7e8)"}}>
 
     <Card style={{ width: "25rem", height: "35rem" }}>
       <Card.Body className="d-flex flex-column justify-content-center align-items-center">

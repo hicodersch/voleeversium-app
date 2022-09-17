@@ -13,7 +13,7 @@ function RegisterComponent(props) {
   return (
     <Card
       className="d-flex flex-column justify-content-center align-items-center bg-warning"
-      style={{ width: "25rem", height: "35rem" }}
+      style={{ width: "25rem", height: "35rem", margin:"48px"}}
     >
       <Card.Body className="d-flex flex-column justify-content-center align-items-center">
         {/*  <img

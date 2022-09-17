@@ -46,7 +46,6 @@ const navigateToHome = ()=> {props.location==="/volee-login" ? navigate("/volee-
 
   return (
     <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center">
-
     <Card style={{ width: "25rem", height: "35rem" }}>
       <Card.Body className="d-flex flex-column justify-content-center align-items-center">
         <Card.Img
