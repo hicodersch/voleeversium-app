@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function TypesExample() {
     const navigate = useNavigate();
 
-    const navigateToRole = ()=> navigate("signup");
+    const navigateToRole = ()=> navigate("/signup");
 
   return (
     <>

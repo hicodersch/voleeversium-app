@@ -4,6 +4,8 @@ import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Container from 'react-bootstrap/Container';
 import VoleService from "../service/voleeService";
+import { useNavigate } from "react-router-dom";
+
 
 
 function Signup() {
@@ -18,12 +20,17 @@ const handleOnChange = (e)=>{
 const handleSubmit = (e)=>{
   e.preventDefault()
  addUser()
+ navigateToLogin()
+
 }
 
 const addUser = ()=>{
  VoleService.createVole(user)
 }
 
+const navigate = useNavigate();
+
+const navigateToLogin = ()=> navigate("/");
 
 
   return (
@@ -55,7 +62,7 @@ const addUser = ()=>{
           </Form.Group>
       
           <Button variant="warning text-white" type="submit">
-            Submitt
+            Submit
           </Button>
         </Form>
       </Card.Body>
