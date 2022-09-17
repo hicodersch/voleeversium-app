@@ -1,11 +1,13 @@
-import Button from 'react-bootstrap/Button';
 
 import './App.css';
+import NavbarComponent from './components/NavbarComponent';
 
 function App() {
+  const navbarItem = ["Dashboard", "Create Provolee", "Match with Volee"];
+
   return (
     <div className="App">
-   <Button variant="primary">Primary</Button>{' '}
+   <NavbarComponent navbarItem={navbarItem}></NavbarComponent>
     </div>
   );
 }
