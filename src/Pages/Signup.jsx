@@ -55,7 +55,7 @@ const addUser = ()=>{
           </Form.Group>
       
           <Button variant="warning text-white" type="submit">
-            Submit
+            Submitt
           </Button>
         </Form>
       </Card.Body>
