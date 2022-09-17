@@ -14,7 +14,7 @@ function TypesExample() {
   return (
     <Container fluid  className="flex-column d-flex align-items-center justify-content-center role-container">
         
-        <Row className="justify-content-center">
+      <Row className="justify-content-center">
         <Col  lg="8">
         <img
           alt=""
@@ -24,22 +24,20 @@ function TypesExample() {
           className="align-top"/>
         </Col>
       </Row>
-      <Row className="mb-5 justify-content-md-center">
-        <Col  lg="6"  style={{ width: "20rem", height: "30rem"}} onClick={navigateToVoleeLogin}> <img style={{borderRadius:"10px"}}
-          alt=""
-          width="300"
-          height="400"
-          src="/assets/voolunteer.jpg"
-/> 
-       
+      <Row className="mb-12 justify-content-md-center">
+        <Col lg="6" onClick={navigateToVoleeLogin} className="role"> 
+          <img style={{borderRadius:"10px"}}
+            alt=""
+            width="300"
+            src="/assets/volee.png"/> <br />
+            <h1>Volee</h1>
         </Col>
-        <Col  lg="6"  style={{ width: "20rem", height: "30rem"}} onClick={navigateToNonproLogin}> <img style={{borderRadius:"10px"}}
-          alt=""
-          width="300"
-          height="400"
-          src="/assets/voolunteer.jpg"
-/> 
-       
+        <Col  lg="6"  onClick={navigateToNonproLogin} className="role"> 
+          <img style={{borderRadius:"10px"}}
+            alt=""
+            width="300"
+            src="/assets/npo.png"/> <br />
+            <h1>NPO</h1>
         </Col>
       </Row>
       

@@ -1,0 +1,9 @@
+
+.role{
+    box-shadow: 1px 1px 1px gray;
+    margin: 5px;
+}
+
+.role h1{
+    text-align: center;
+}
