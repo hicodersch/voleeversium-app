@@ -7,7 +7,7 @@ import Badge from "react-bootstrap/Badge";
 import Form from "react-bootstrap/Form";
 
 function VoleeHome() {
-  const navbarVoleeItem = ["Profil", "Create Volee", "Match with Volee"];
+  const navbarVoleeItem = ["Profil", "Engage", "Bazaar"];
   const isLoggedIn = true;
   if (isLoggedIn) {
     return (
