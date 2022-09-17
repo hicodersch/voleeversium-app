@@ -1,13 +1,12 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import NavbarComponent from "../components/NavbarNpoComponent";
-import Badge from "react-bootstrap/Badge";
-
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
+import Badge from "react-bootstrap/Badge";
+
+
 function ProvoleeList() {
   const provoleeList = [
     {
