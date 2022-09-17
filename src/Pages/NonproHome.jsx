@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarComponent from "../components/NavbarComponent";
+import NavbarComponent from "../components/NavbarNpoComponent";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,12 +7,11 @@ import Badge from "react-bootstrap/Badge";
 import Form from "react-bootstrap/Form";
 
 function NonproHome() {
-  const navbarNonproItem = ["Profil", "ProVolees"];
   const isLoggedIn = true;
   if (isLoggedIn) {
     return (
       <div>
-        <NavbarComponent navbarItem={navbarNonproItem}></NavbarComponent>
+        <NavbarComponent></NavbarComponent>
         <Container fluid className="mt-5 flex-column d-flex ">
           <Row className="justify-content-center">
             <Col lg="4">

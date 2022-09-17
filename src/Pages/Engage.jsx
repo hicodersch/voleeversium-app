@@ -1,16 +1,14 @@
-import React from 'react'
-import NavbarComponent from "../components/NavbarComponent";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import React from 'react';
 import Col from "react-bootstrap/Col";
-import ProvoleeComponent from "../components/ProvoleeComponent";
+import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
+import Row from "react-bootstrap/Row";
 import EngageComponent from '../components/EngageComponent';
+import NavbarComponent from '../components/NavbarVoleeComponent';
 function Engage() {
-  const navbarVoleeItem = ["Profil", "Engage", "Bazaar"];
   return (
    <>
-   <NavbarComponent navbarItem={navbarVoleeItem}></NavbarComponent>
+   <NavbarComponent></NavbarComponent>
    <Container
       className="mt-5 flex-column d-flex align-items-center justify-content-center"
     >
