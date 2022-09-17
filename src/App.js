@@ -9,6 +9,8 @@ import NonproHome from './pages/NonproHome';
 import Signup from './pages/Signup';
 import Role from './pages/Role';
 import MatchProVolee from './pages/MatchProVolee';
+import ProvoleeList from './pages/ProvoleeList';
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
         <Route path="/role" element={<Role />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/volee-home/match" element={<MatchProVolee />} />
+        <Route path="/provolees" element={<ProvoleeList />} />
         <Route path="/volee-signup" element={<Signup />} />
         <Route path="/nonpro-signup" element={<Signup />} />
         <Route path="/volee-login" element={<Login />} />

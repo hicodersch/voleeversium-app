@@ -1,10 +1,8 @@
-import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import './Role.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Link } from 'react-router-dom';
 
 function TypesExample() {
     const navigate = useNavigate();
