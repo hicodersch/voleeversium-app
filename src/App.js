@@ -11,6 +11,8 @@ import Signup from './pages/Signup';
 
 import Role from './pages/Role';
 import MatchProVolee from './pages/MatchProVolee';
+import Engage from './pages/Engage';
+import VoleeBazar from './pages/VoleeBazar';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
         <Route path="/nonpro-signup" element={<Signup />} />
         <Route path="/volee-login" element={<Login />} />
         <Route path="/nonpro-login" element={<Login />} />
+        <Route path="/engage" element={<Engage />} />
+        <Route path="/volee-bazar" element={<VoleeBazar />} />
       </Routes>
     </div>
   );
