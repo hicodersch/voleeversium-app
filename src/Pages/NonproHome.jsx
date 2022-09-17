@@ -7,7 +7,6 @@ function NonproHome() {
     if (isLoggedIn) {
       return <> 
       <NavbarComponent navbarItem={navbarNonproItem}></NavbarComponent>;
-      NPO
       </>
      
     }

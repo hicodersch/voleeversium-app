@@ -20,7 +20,8 @@ function NavbarComponent({navbarItem}) {
           <Nav className="me-auto">
             {navbarItem.map(item=>{
               return <>
-              <Nav.Link to={"/"+item}>{item}</Nav.Link>
+              <Nav.Link></Nav.Link>
+              <Link to={"/volee-home/match"}>{item}</Link>
               </>
               
             })}
