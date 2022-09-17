@@ -39,7 +39,8 @@ function VoleeHome() {
               </div>
              
             </Col>
-            <Col className="lg=6">
+           <div style={{ width: "2rem", height: "2rem" }}></div>
+            <Col className="lg=8">
               <Row>
                 <h1>Details</h1>
                 <hr></hr>
