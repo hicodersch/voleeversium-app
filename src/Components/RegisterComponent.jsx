@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 function RegisterComponent() {
   const navigate = useNavigate();
 
-  const navigateToSignup = ()=> navigate("signup");
+  const navigateToRole = ()=> navigate("role");
 
   return (
     <Card
@@ -25,7 +25,7 @@ function RegisterComponent() {
         /> */}
         <Card.Title>Sign Up</Card.Title>
         <Card.Text>Sign Up here if you don't have account</Card.Text>
-        <Button style={{ backgroundColor:"orange" }} variant="warning text-white" onClick={navigateToSignup} type="submit">
+        <Button style={{ backgroundColor:"orange" }} variant="warning text-white" onClick={navigateToRole} type="submit">
           Sign Up
         </Button>
       </Card.Body>
