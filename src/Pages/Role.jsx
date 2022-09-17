@@ -12,8 +12,7 @@ function TypesExample() {
 
 
   return (
-    <Container fluid  className="flex-column d-flex align-items-center justify-content-center role-container"
-    style={{backgroundImage:"linear-gradient(to right, #ccd3db, #fce7e8)"}}>
+    <Container fluid  className="flex-column d-flex align-items-center justify-content-center role-container">
         
         <Row className="justify-content-center">
         <Col  lg="8">
