@@ -4,12 +4,11 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 
 import Login from './pages/Login';
-import Home from './pages/Home';
 import VoleeHome from './pages/VoleeHome';
 import NonproHome from './pages/NonproHome';
-import NonproLogin from './pages/NonproLogin';
+
 import Signup from './pages/Signup';
-import VoleeLogin from './pages/VoleeLogin';
+
 import Role from './pages/Role';
 
 
