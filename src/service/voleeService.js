@@ -3,11 +3,19 @@ const BASE_URL = process.env.REACT_APP_API_URL;
 
 class VoleService {
   static async createVole(pUser) {
-    console.log(pUser);
     let response = await axios.post(`${BASE_URL}/volee`, {
       email: pUser.email,
       password: pUser.password,
     });
+    return response.data;
+  }
+
+  static async checkVole(pUser) {
+    let response = await axios.post(`${BASE_URL}/volee/check`, {
+      email: pUser.email,
+      password: pUser.password,
+    });
+    console.log(response.data)
     return response.data;
   }
 

@@ -4,16 +4,11 @@ import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Container from 'react-bootstrap/Container';
 import VoleService from "../service/voleeService";
-import nonProService from "../service/nonProService";
-
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
 function Signup() {
-
-  const location = useLocation();
-
 
   const [user, setUser]=useState({})
   
@@ -24,25 +19,18 @@ const handleOnChange = (e)=>{
 
 const handleSubmit = (e)=>{
   e.preventDefault()
-  if(location.pathname==="/volee-signup"){
-     addUser()
-  }
-  addNPO()
-
+ addUser()
  navigateToLogin()
 
 }
 
-const addNPO = ()=>{
-  nonProService.createNonpro(user)
- }
 const addUser = ()=>{
  VoleService.createVole(user)
 }
 
 const navigate = useNavigate();
 
-const navigateToLogin = ()=> {location.pathname==="/volee-signup" ? navigate("/volee-login"):navigate("/nonPro-login")}
+const navigateToLogin = ()=> navigate("/nonpro-login");
 
 
   return (

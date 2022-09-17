@@ -5,12 +5,14 @@ import { useNavigate } from "react-router-dom";
 function TypesExample() {
     const navigate = useNavigate();
 
-    const navigateToRole = ()=> navigate("/signup");
+    const navigateToNonproLogin = ()=> navigate("/nonpro-login");
+    const navigateToVoleeLogin = ()=> navigate("/volee-login");
+
 
   return (
     <>
-      <Button variant="success" onClick={navigateToRole}>Volee</Button>{' '}
-      <Button variant="warning" onClick={navigateToRole}>NonPro</Button>{' '}
+      <Button variant="success" onClick={navigateToVoleeLogin}>Volee</Button>{' '}
+      <Button variant="warning" onClick={navigateToNonproLogin}>NonPro</Button>{' '}
     </>
   );
 }
