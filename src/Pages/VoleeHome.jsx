@@ -1,11 +1,11 @@
 import React from "react";
-import NavbarComponent from "../components/NavbarComponent";
+import NavbarComponent from "../components/NavbarVoleeComponent";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Badge from "react-bootstrap/Badge";
 import Form from "react-bootstrap/Form";
-
+import Card from "react-bootstrap/Card";
 function VoleeHome() {
   const navbarVoleeItem = ["Profil", "Engage", "Bazaar"];
   const isLoggedIn = true;
@@ -15,19 +15,35 @@ function VoleeHome() {
         <NavbarComponent navbarItem={navbarVoleeItem}></NavbarComponent>
         <Container fluid className="mt-5 flex-column d-flex ">
           <Row className="justify-content-center">
-            <Col lg="4">
+            <Col
+              lg="2"
+              className="d-flex flex-column align-items-center justify-content-center"
+            >
               <img
                 alt=""
                 src="/assets/profile-avatar.png"
                 width="300"
                 height="300"
               />
+
+              <Card.Title>Tim Cooks</Card.Title>
+              <Card.Text>Volee</Card.Text>
+
+              <div className="d-flex align-items-center justify-content-center">
+              <span style={{fontSize: 30}} >6000</span><img 
+                alt=""
+                src="https://www.iconpacks.net/icons/1/free-coin-icon-794-thumb.png"
+                width="35em"
+                height="35em"
+              />
+              </div>
+             
             </Col>
             <Col className="lg=6">
-              <Row >
+              <Row>
                 <h1>Details</h1>
                 <hr></hr>
-              </Row> 
+              </Row>
               <Row className="bg-light m-3">
                 <Col>
                   <Form d-flex>
