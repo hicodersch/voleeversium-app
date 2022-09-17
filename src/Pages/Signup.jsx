@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
+import Container from 'react-bootstrap/Container';
+import VoleService from "../service/voleeService";
 
-function LoginComponent() {
+
+function Signup() {
+
+  const [user, setUser]=useState({})
+  
+const handleOnChange = (e)=>{
+  setUser({...user, [e.target.name]:e.target.value})
+
+}
+
+const handleSubmit = (e)=>{
+  e.preventDefault()
+ addUser()
+ console.log(user)
+
+}
+
+const addUser = ()=>{
+ VoleService.createVole(user)
+}
+
+
+
   return (
+    <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center">
+
     <Card style={{ width: "25rem", height: "35rem" }}>
       <Card.Body className="d-flex flex-column justify-content-center align-items-center">
         <Card.Img
@@ -12,21 +38,14 @@ function LoginComponent() {
           variant="top"
           src="/assets/login-logo.png"
         />
-        {/*  <img
-          alt=""
-          src="/assets/logo.png"
-          width="100"
-          height="100"
-          className="d-flex justify-content-md-center  align-top"
-        /> */}
-        <Card.Title>Login</Card.Title>
-        <Form>
+        <Card.Title>Sign Up</Card.Title>
+        <Form onSubmit={handleSubmit}>
           <Form.Group
             className="d-felx flex-column justify-content-center mb-3"
             controlId="formBasicEmail"
           >
             <Form.Label>Email address</Form.Label>
-            <Form.Control text="username" placeholder="User Name" />
+            <Form.Control onChange={handleOnChange} type="email" name="email" placeholder="Enter email" />
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
@@ -34,18 +53,18 @@ function LoginComponent() {
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <Form.Control onChange={handleOnChange} type="password" name="password" placeholder="Password" />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
+      
           <Button variant="warning text-white" type="submit">
             Submit
           </Button>
         </Form>
       </Card.Body>
     </Card>
+    </Container>
+
   );
 }
 
-export default LoginComponent;
+export default Signup;

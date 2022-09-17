@@ -1,13 +1,10 @@
+import axios from "axios";
 const BASE_URL = process.env.REACT_APP_API_URL;
 
 class VoleService {
-  static async createVole(pFirstName, pLastName, pEmail,pPicture,pSkills) {
+  static async createVole(pUser) {
     let response = await axios.post(`${BASE_URL}/vole`, {
-      firstName: pFirstName,
-      lastName: pLastName,
-      email: pEmail,
-      picture:pPicture,
-      skills:pSkills
+      body:JSON.stringify(pUser)
     });
     return response.data;
   }
@@ -17,7 +14,7 @@ class VoleService {
     return response.data
   }
   static async getVoleeById(pId) {
-    console.log(pUserId)
+    console.log(pId)
     let response = await axios.get(`${BASE_URL}/vole/${pId}`)
     return response.data
   }

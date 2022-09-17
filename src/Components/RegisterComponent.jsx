@@ -3,7 +3,13 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 
+import { useNavigate } from "react-router-dom";
+
 function RegisterComponent() {
+  const navigate = useNavigate();
+
+  const navigateToSignup = ()=> navigate("signup");
+
   return (
     <Card
       className="d-flex flex-column justify-content-center align-items-center bg-warning"
@@ -19,10 +25,9 @@ function RegisterComponent() {
         /> */}
         <Card.Title>Sign Up</Card.Title>
         <Card.Text>Sign Up here if you don't have account</Card.Text>
-        <Button  style={{ backgroundColor:"orange" }} variant="warning text-white" type="submit">
+        <Button style={{ backgroundColor:"orange" }} variant="warning text-white" onClick={navigateToSignup} type="submit">
           Sign Up
         </Button>
-        <Form></Form>
       </Card.Body>
     </Card>
   );
