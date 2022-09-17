@@ -7,10 +7,7 @@ import Form from "react-bootstrap/Form";
 
 function MatchProVolee() {
   return (
-    <Container
-      fluid
-      className="mt-5 flex-column d-flex align-items-center justify-content-center"
-    >
+    <Container className="mt-5 flex-column d-flex align-items-center justify-content-center">
       <Row className="justify-content-center">
         <Col>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
