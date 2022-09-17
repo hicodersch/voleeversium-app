@@ -1,9 +1,8 @@
 import React from 'react'
 import NavbarComponent from '../components/NavbarComponent'
 
-function Home() {
+function VoleeHome() {
     const navbarVoleeItem = ["Dashboard", "Create Volee", "Match with Volee"];
-    const navbarNonProItem = ["Dashboard", "Create Provolee", "Match with Provolee"];
     const isLoggedIn = true
     if (isLoggedIn) {
       return <NavbarComponent navbarItem={navbarVoleeItem}></NavbarComponent>;
@@ -11,4 +10,4 @@ function Home() {
   }
 
 
-export default Home
+export default VoleeHome

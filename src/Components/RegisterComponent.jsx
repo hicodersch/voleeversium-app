@@ -5,10 +5,10 @@ import Card from "react-bootstrap/Card";
 
 import { useNavigate } from "react-router-dom";
 
-function RegisterComponent() {
+function RegisterComponent(props) {
   const navigate = useNavigate();
 
-  const navigateToRole = ()=> navigate("role");
+  const navigateToSignUp = ()=> {props.location==="/volee-login" ? navigate("/volee-signup"):navigate("/nonPro-signup")};
 
   return (
     <Card
@@ -25,7 +25,7 @@ function RegisterComponent() {
         /> */}
         <Card.Title>Sign Up</Card.Title>
         <Card.Text>Sign Up here if you don't have account</Card.Text>
-        <Button style={{ backgroundColor:"orange" }} variant="warning text-white" onClick={navigateToRole} type="submit">
+        <Button style={{ backgroundColor:"orange" }} variant="warning text-white" onClick={navigateToSignUp} type="submit">
           Sign Up
         </Button>
       </Card.Body>

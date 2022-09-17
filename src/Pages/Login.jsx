@@ -5,17 +5,16 @@ import Col from 'react-bootstrap/Col';
 import LoginComponent from '../components/LoginComponent';
 import './Login.css';
 import RegisterComponent from '../components/RegisterComponent';
+import { useLocation } from 'react-router-dom';
 
 function Login() {
 
-  
 
-  const user ={
-    userName:"volee",
-    password:"volee"
-  }
+const location = useLocation()
+
 
   return (
+
     <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center">
       <Row className="justify-content-center">
         <Col  lg="8">
@@ -29,10 +28,10 @@ function Login() {
       </Row>
       <Row className="justify-content-md-center">
         <Col  lg="6">
-        <LoginComponent/>
+        <LoginComponent location={location.pathname}/>
         </Col>
         <Col  lg="6">
-        <RegisterComponent/>
+        <RegisterComponent location={location.pathname}/>
         </Col>
       </Row>
     </Container>

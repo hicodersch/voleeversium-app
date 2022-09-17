@@ -7,7 +7,9 @@ import Col from 'react-bootstrap/Col';
 function TypesExample() {
     const navigate = useNavigate();
 
-    const navigateToRole = ()=> navigate("/signup");
+    const navigateToNonproLogin = ()=> navigate("/nonpro-login");
+    const navigateToVoleeLogin = ()=> navigate("/volee-login");
+
 
   return (
     <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center">
@@ -23,10 +25,10 @@ function TypesExample() {
       </Row>
       <Row className="justify-content-md-center">
         <Col  lg="6">
-        <Button  style={{ width: "25rem", height: "35rem" }} variant="success" onClick={navigateToRole}>Volee</Button>{' '}
+        <Button  style={{ width: "25rem", height: "35rem" }} variant="success" onClick={navigateToVoleeLogin}>Volee</Button>{' '}
         </Col>
         <Col  lg="6">
-        <Button style={{ width: "25rem", height: "35rem" }}  variant="warning" onClick={navigateToRole}>NonPro</Button>{' '}
+        <Button style={{ width: "25rem", height: "35rem" }}  variant="warning" onClick={navigateToNonproLogin}>NonPro</Button>{' '}
         </Col>
       </Row>
       

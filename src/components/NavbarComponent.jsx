@@ -20,7 +20,7 @@ function NavbarComponent({navbarItem}) {
           <Nav className="me-auto">
             {navbarItem.map(item=>{
               return <>
-              <Link to={"/"+item}>{item}</Link>
+              <Nav.Link to={"/"+item}>{item}</Nav.Link>
               </>
               
             })}
