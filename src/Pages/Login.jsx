@@ -15,8 +15,7 @@ const location = useLocation()
 
   return (
 
-    <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center"
-    style={{backgroundImage:"linear-gradient(to right, #ccd3db, #fce7e8)"}}>
+    <Container fluid  className="mt-5 flex-column d-flex align-items-center justify-content-center">
       <Row className="justify-content-center">
         <Col  lg="8">
         <img

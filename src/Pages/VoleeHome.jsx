@@ -33,13 +33,14 @@ function VoleeHome() {
               <span style={{fontSize: 30}} >6000</span><img 
                 alt=""
                 src="https://www.iconpacks.net/icons/1/free-coin-icon-794-thumb.png"
-                width="35em"
-                height="35em"
+                width="50em"
+                height="50em"
               />
               </div>
              
             </Col>
-            <Col className="lg=6">
+           <div style={{ width: "2rem", height: "2rem" }}></div>
+            <Col className="lg=8">
               <Row>
                 <h1>Details</h1>
                 <hr></hr>
