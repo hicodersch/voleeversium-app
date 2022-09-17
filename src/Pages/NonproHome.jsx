@@ -15,11 +15,10 @@ function NonproHome() {
             <Col className="col-3 m-2 d-flex flex-column align-items-center justify-content-center">
               <Row>
                 <img
-                  style={{ borderRadius: "50%" }}
                   alt=""
-                  src="/assets/wlw.png"
-                  width="300"
-                  height="300"
+                  src="https://wir-lernen-weiter.ch/wp-content/uploads/2021/11/cropped-Logo-alleinstehend_rot.png"
+                  width="200"
+                  height="200"
                 />
               </Row>
             </Col>
