@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 function NavbarComponent({navbarItem}) {
   return (
@@ -19,7 +20,7 @@ function NavbarComponent({navbarItem}) {
           <Nav className="me-auto">
             {navbarItem.map(item=>{
               return <>
-              <Nav.Link href="#home">{item}</Nav.Link>
+              <Link to={"/"+item}>{item}</Link>
               </>
               
             })}

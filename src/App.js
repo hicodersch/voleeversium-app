@@ -1,21 +1,21 @@
 
 import './App.css';
 
-import Login from './Pages/Login';
+import { Routes, Route } from "react-router-dom";
 
-import NavbarComponent from './components/NavbarComponent';
-
+import Login from './pages/Login';
+import Home from './pages/Home';
+import Signup from './pages/Signup';
 
 function App() {
-  const navbarItem = ["Dashboard", "Create Provolee", "Match with Volee"];
 
   return (
-    <div className="App">
-
-   <Login/>
-
-   <NavbarComponent navbarItem={navbarItem}></NavbarComponent>
-
+    <div className="App"> 
+      <Routes>
+        <Route path="/" exact="true" element={<Login />} />
+        <Route path="/home/" element={<Home />} />
+        <Route path="/signup/" element={<Signup />} />
+      </Routes>
     </div>
   );
 }
