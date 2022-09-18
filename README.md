@@ -1,71 +1,30 @@
-# Getting Started with Create React App
+# Voleeversium
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Why
+The lack of motivation for volunteering activities is the main driving force in designing this platform. We believe that with a right instrument, we would achieve to trigger the eagerness and raise the appetite in individuals and organizations for volunteering. We therefore decided to take the challenge to make a contribution to transforming the world for the better.
 
-## Available Scripts
+## Description
+Voleeversium is a brand new platform where volunteers can play varying roles to leave their footprints in volunteering efforts. Simply, the Volee is who takes part in the volunteering activity that the VNPO creates and, with that collects the Voleecoins, while the Voleehero is the one who generates coupon to keep motivation up.
 
-In the project directory, you can run:
+The crucial point is motivation, which lies at the core concept of Voleeversium. Vollee offers time and skill, VNPO frames the activity, and finally, Voleehero cultivates the source of motivation, by providing coupons to the platform which Volee can obtain, using the Volleecoins.
+Voleeversium typically forms a pool especially for Volee and VNPO to link up without requiring many tiresome efforts to connect to the right volunteers and find the right activities. Organizations(VNPO) have a chance to reach out beyond their hinterlands.
+Volee and VNPO input skills and requirements and then match with each other if fit both.
 
-### `npm start`
+## How we built
+We used following technologies to achieve the goal:
+Figma for designing
+React.js for front--end,
+Node.js for back-end
+Mysql for database
+Sqlz for ORM
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Challenges we ran into
+We had a long discussion how to create a login module which, effected negatively the schedule in the limited time span. Designing the UI was another challenge that we had to went through several times to decide on the features to best suit the users` needs.
+Since we attended Hackathon online, we face obstacles finding a suitable location to manage the entire process.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Accomplishments that we’re proud of
+The idea generated at the end of the brainstorming session satisfied the whole team members. That motivated the the team and promoted awareness of pursuing collective actions to advocate for shared goal.
+Furher, being able to built a tool that serves the idea and functions in a way the team planed is another reason for team to be proud of.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# voleeversium-app
+## What we learned
+When struggling for the solution to the subject, the let us epathize for the organizations looking for wolintering. That encouraged us to volunteer.
