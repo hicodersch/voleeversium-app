@@ -17,27 +17,10 @@ function VoleeBazar() {
   const minCoin = () => {};
 
   const voleeGift = [
-    {
-      companyName: "Apple",
-      voleeHero: "Apple Gift Card",
-      image:
-        "https://yt3.ggpht.com/ytc/AMLnZu-jHEMxJemdRdZyi3vgBPHSNrnTeG7WqbJxYzFhLw=s900-c-k-c0x00ffffff-no-rj",
-      price: 55,
-      schedule: "",
-      coin: 50,
-    },
-    {
-      companyName: "Zurich Ins.",
-      voleeHero: "Zurich Ins. Gift Card",
-      image:
-        "https://img.nzz.ch/2022/03/27/369ecd79-3e47-47a6-929b-a855aca038d2.png?width=560&fit=crop&quality=75&auto=webp",
-      price: 25,
-      schedule: "",
-      coin: 300,
-    },
+   
     {
       companyName: "SBB",
-      voleeHero: "SBB Gift Card",
+      voleeHero: "Get free tickets for refugees",
       image:
         "https://www.scholtysik.ch/dam/jcr:77e16047-f12d-468f-9253-1d11fde354ea/131125_scholtysik_news_sbb_new.png",
       price: 15,
@@ -46,7 +29,7 @@ function VoleeBazar() {
     },
     {
       companyName: "Migros",
-      voleeHero: "Migros Gift Card",
+      voleeHero: "Provide free food for homeless",
       image:
         "https://yt3.ggpht.com/ytc/AAUvwnhAo_SQh0wmK1uX4zatcRgCdnRE6Spf_as9ZELV=s900-c-k-c0x00ffffff-no-rj",
       price: 75,
@@ -55,12 +38,30 @@ function VoleeBazar() {
     },
     {
       companyName: "Coop",
-      voleeHero: "Coop Gift Card",
+      voleeHero: "Feed animals",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaeauhtg89E1GQvUGlbUt_-ebLb3voIpskQ&usqp=CAU",
       price: 45,
       schedule: "",
       coin: 900,
+    },
+    {
+      companyName: "Apple",
+      voleeHero: "Participate innovation workshops",
+      image:
+        "https://yt3.ggpht.com/ytc/AMLnZu-jHEMxJemdRdZyi3vgBPHSNrnTeG7WqbJxYzFhLw=s900-c-k-c0x00ffffff-no-rj",
+      price: 55,
+      schedule: "",
+      coin: 50,
+    },
+    {
+      companyName: "Zurich Ins.",
+      voleeHero: "Coding with IT Team for 1 week",
+      image:
+        "https://img.nzz.ch/2022/03/27/369ecd79-3e47-47a6-929b-a855aca038d2.png?width=560&fit=crop&quality=75&auto=webp",
+      price: 25,
+      schedule: "",
+      coin: 300,
     },
   ];
   return (

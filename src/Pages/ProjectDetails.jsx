@@ -65,7 +65,7 @@ function ProjectDetails() {
             </Col>
             <Col className="lg=8 m-5">
               <Row>
-                <h1>Onboarding</h1>
+                <h1>Onboarded</h1>
                 <hr></hr>
                 <Col>
                   <Card style={{ width: "15rem", height: "25rem" }}>

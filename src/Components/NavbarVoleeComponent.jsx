@@ -25,7 +25,7 @@ function NavbarComponent() {
               <Nav.Link href="/engage">Engage</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/volee-bazar">Bazar</Nav.Link>
+              <Nav.Link href="/volee-bazar">Bazaar</Nav.Link>
             </Nav.Item>
           </Nav>
         </Container>
